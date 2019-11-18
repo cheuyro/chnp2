@@ -5,8 +5,7 @@ namespace GrishaPopov;
 ini_set('display_errors',1);
 error_reporting(-1);
 
-class Grisha_PopovException extends \RuntimeException{
-}
+include_once('grisha/Grisha_PopovException.php');
 
 include_once('core/EquationInterface.php');
 include_once('core/LogIntefrace.php');
