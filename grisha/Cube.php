@@ -7,7 +7,7 @@ class Cube extends \GrishaPopov\Line implements \core\EquationInterface{
 		return pow($b,2)-4*$a*$c;
 	}
 	
-	public function mathCube($a,$b,$c){	
+	public function solve($a,$b,$c){	
 		if ($a!=0){
 			MyLog::log("Eto kvadratnoe yravnenie");	
 			$d = $this->mathD($a,$b,$c);

@@ -8,7 +8,7 @@ error_reporting(-1);
 include_once('grisha/Grisha_PopovException.php');
 
 include_once('core/EquationInterface.php');
-include_once('core/LogIntefrace.php');
+include_once('core/LogInterface.php');
 include_once('core/LogAbstract.php');
 
 include_once('grisha/MyLog.php');
@@ -44,10 +44,10 @@ try {
 		$objLine = new Cube();
 		$logLine = '';
 		if ($nums[0] != 0){
-			list($num1,$num2) = $objLine->mathCube($a,$b,$c);
+			list($num1,$num2) = $objLine->solve($a,$b,$c);
 			$logLine = 'Korni: x1 = '.$num1.', x2 = '.$num2;
 		}else{
-			list($num1) = $objLine->mathCube($a,$b,$c);
+			list($num1) = $objLine->solve($a,$b,$c);
 			$logLine = 'Koren: x1 = '.$num1;
 		}
 		MyLog::log($logLine);
