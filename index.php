@@ -31,9 +31,9 @@ try {
 	if (count($nums) > 2){
 		$c = (float)$nums[2];
 	}
-		
 	
-
+	MyLog::log('Versia programmi '.file_get_contents(__DIR__.'/version'));
+	
 	if (!isset($c)){
 		MyLog::log('Vvedeno yravnenie '.$a.'X-'.$b.'=0');
 		$objLine = new Line();
