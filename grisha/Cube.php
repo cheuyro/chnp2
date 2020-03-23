@@ -13,11 +13,11 @@ class Cube extends \GrishaPopov\Line implements \core\EquationInterface{
 			$d = $this->mathD($a,$b,$c);
 			if ($d>0){
 				$this->x = array(
-								round((-$b+sqrt($d))/$a*2,2),
-								round((-$b-sqrt($d))/$a*2,2)
+								round((-$b+sqrt($d))/($a*2),2),
+								round((-$b-sqrt($d))/($a*2),2)
 								);
 			} elseif ($d==0) {
-				$this->x = array(round((-b)/2*$a,2));
+				$this->x = array(round(-($b)/(2*$a),2));
 			} elseif ($d < 0) {
 				throw new Grisha_PopovException("Discriminant < 0, net reshenii", 1);
 			}

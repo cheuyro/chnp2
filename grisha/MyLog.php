@@ -12,10 +12,10 @@ class MyLog extends \core\LogAbstract implements \core\LogInterface{
 	
 	public function _write(){
 		echo implode("\n", self::Instance()->log)."\n";
-		if (!is_dir("project/laba3/log")){
-			mkdir("project/laba3/log",0777,true);
+		if (!is_dir("log")){
+			mkdir("log",0777,true);
 		}
-		file_put_contents("project/laba3/log/log",implode("\n", self::Instance()->log) . PHP_EOL, FILE_APPEND);
+		file_put_contents("log/".date('d-m-Y H_i_s'),implode("\n", self::Instance()->log) . PHP_EOL, FILE_APPEND);
 	}
 	
 	public static function write(){

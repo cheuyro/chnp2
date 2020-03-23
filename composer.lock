@@ -1,0 +1,40 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7c40d8aa782d89b5c545841801d20f08",
+    "packages": [
+        {
+            "name": "cheuyro/chnp2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/cheuyro/chnp2",
+                "reference": "master"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "grisha/"
+                ],
+                "files": []
+            },
+            "time": "2020-03-21T09:16:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "cheuyro/chnp2": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.3.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

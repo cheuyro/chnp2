@@ -5,17 +5,17 @@ namespace GrishaPopov;
 ini_set('display_errors',1);
 error_reporting(-1);
 
-include_once('grisha/Grisha_PopovException.php');
 
-include_once('core/EquationInterface.php');
-include_once('core/LogInterface.php');
-include_once('core/LogAbstract.php');
+//include_once('core/EquationInterface.php');
+//include_once('core/LogInterface.php');
+//include_once('core/LogAbstract.php');
+require_once 'grisha/vendor/autoload.php';
 
-include_once('grisha/MyLog.php');
-
-include_once('grisha/Line.php');
-include_once('grisha/Cube.php');
-
+//include_once('grisha/Grisha_PopovException.php');
+//include_once('grisha/MyLog.php');
+//include_once('grisha/Line.php');
+//include_once('grisha/Cube.php');
+require_once 'vendor/autoload.php';
 
 try {
 	echo "Vvedite 3 chisla (with space)\n";
