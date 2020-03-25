@@ -1,24 +1,22 @@
 {
+	"name": "cheuyro/chnp2",
+    "type": "project",
+    "licence": "MIT",
+    "minimum-stability": "dev-master",
+    "authors": [
+        {
+            "name": "cheuyro",
+            "email": "123@yandex.ru"
+        }
+    ],
     "require": {
         "php":">=7.3.0",
-        "cheuyro/chnp2":"dev-master"
+        "psixxxspb/trpo":"dev-master"
     },
     "repositories":[
         {
-            "type":"package",
-            "package":{
-                "name":"cheuyro/chnp2",
-                "version":"dev-master",
-                "source":{
-                    "type":"git",
-                    "url":"http://github.com/cheuyro/chnp2",
-                    "reference":"master"
-                },
-                "autoload":{
-                    "classmap":["grisha/"],
-                    "files":[]
-                }
-            }
+            "type":"git",
+            "url":"https://github.com/psixxxspb/trpo",
         }
     ]
 }

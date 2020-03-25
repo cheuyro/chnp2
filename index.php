@@ -9,7 +9,7 @@ error_reporting(-1);
 //include_once('core/EquationInterface.php');
 //include_once('core/LogInterface.php');
 //include_once('core/LogAbstract.php');
-require_once 'grisha/vendor/autoload.php';
+//require_once 'grisha/vendor/autoload.php';
 
 //include_once('grisha/Grisha_PopovException.php');
 //include_once('grisha/MyLog.php');
