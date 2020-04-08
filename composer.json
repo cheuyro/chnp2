@@ -1,8 +1,10 @@
 {
+    "config": {
+        "secure-http": false
+    },
 	"name": "cheuyro/chnp2",
     "type": "project",
     "licence": "MIT",
-    "minimum-stability": "dev-master",
     "authors": [
         {
             "name": "cheuyro",
@@ -11,12 +13,33 @@
     ],
     "require": {
         "php":">=7.3.0",
-        "psixxxspb/trpo":"dev-master"
+        "psixxxspb/trpo":"dev-master",
+        "rok9ru/trpo-core":"dev-master"
     },
-    "repositories":[
+     "repositories":[
         {
-            "type":"git",
-            "url":"https://github.com/psixxxspb/trpo",
+            "type":"package",
+            "package":{
+                "name":"psixxxspb/trpo",
+                "version":"dev-master",
+                "source":{
+                    "type":"git",
+                    "url":"http://github.com/psixxxspb/trpo",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package":{
+                "name":"rok9ru/trpo-core",
+                "version":"dev-master",
+                "source":{
+                    "type":"git",
+                    "url":"http://github.com/rok9ru/trpo-core",
+                    "reference":"master"
+                }
+            }
         }
     ]
 }
